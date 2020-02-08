@@ -35,27 +35,78 @@
 
     <section>
       <h2>Фильтр товаров</h2>
-      <!--Здесь будет форма-->
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+              <label for="filter-baxter-of-california">Baxter of California</label>
+            </li>
+            <li>
+              <input type="checkbox" name="mr-natty" id="filter-mr-natty">
+              <label for="filter-mr-natty">Mr Natty</label>
+            </li>
+            <li>
+              <input type="checkbox" name="suavecito" id="filter-suavecito" checked>
+              <label for="filter-suavecito">Suavecito</label>
+            </li>
+            <li>
+              <input type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+              <label for="filter-malin-goetz">Malin+Goetz</label>
+            </li>
+            <li>
+              <input type="checkbox" name="murrays" id="filter-murrays">
+              <label for="filter-murrays">Murray’s</label>
+            </li>
+            <li>
+              <input type="checkbox" name="american-crew" id="filter-american-crew" checked>
+              <label for="filter-american-crew">American Crew</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Группы товаров:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="product-group" value="shaving" id="filter-shave" >
+              <label for="filter-shave">Бритвенные принадлежности</label>
+            </li>
+            <li>
+              <input type="radio" name="product-group" value="hair-care" id="filter-care" checked>
+              <label for="filter-care">Средства для ухода</label>
+            </li>
+            <li>
+              <input type="radio" name="product-group" value="accessories" id="filter-accessories">
+              <label for="filter-accessories">Аксессуары</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">
+          Показать
+        </button>
+      </form>
     </section>
 
     <section>
       <h2>Список средств для ухода</h2>
       <ul>
         <li>
-          <h3>
-            <a href="catalog-item.html">
+          <a href="catalog-item.html">
+           <h3>
               <span>Набор для путешествий</span>
               <span>«Baxter of California»</span>
-            </a>
-          </h3>
-          <a href="catalog-item.html">
-          <img src="img/poduct-1(2).jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
+           </h3>
+           <p>
+           <img src="img/poduct-1(2).jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
+           </p>
           </a>
           <p>
           2900 р
           <a href="#">Купить</a>
           </p>
         </li>
+
         <li>
           <h3>
             <a href="catalog-item.html">
@@ -71,6 +122,7 @@
           <a href="#">Купить</a>
           </p>
         </li>
+
         <li>
           <h3>
             <a href="catalog-item.html">
@@ -86,6 +138,7 @@
           <a href="#">Купить</a>
           </p>
         </li>
+
         <li>
           <h3>
             <a href="catalog-item.html">
