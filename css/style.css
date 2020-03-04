@@ -10,7 +10,7 @@ body {
   text-transform: uppercase;
 
   background-color: #000000;
-  background-image: url("img\bgf-index.jpg");
+  background-image: url("img/bgf-index.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
