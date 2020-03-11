@@ -30,55 +30,58 @@
 
        </nav>
     </header>
-    <main>
+    <main class="container">
 
-      <h1>Барбершоп «Бородинский»</h1>
+      <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 
-      <section>
-        <h2>Преимущества</h2>
-        <ul>
-          <li>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features-list">
+          <li class="feature-item">
             <h3>БЫСТРО</h3>
             <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>КРУТО</h3>
             <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>ДОРОГО</h3>
             <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
           </li>
         </ul>
       </section>
 
-      <section>
+      <div class="index-columns">
+      <section class="news">
         <h2>НОВОСТИ</h2>
-        <ul>
-          <li>
+        <ul class="news-list">
+          <li class="news-item">
             <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
             <time datetime="2019-01-11">11 января</time>
-          </li>
+          </li class="news-item">
           <li>
             <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
             <time datetime="2019-01-18">18 января</time>
           </li>
-          <li><a href="#">ВСЕ НОВОСТИ</a></li>
+          <li><a class="button" href="#">ВСЕ НОВОСТИ</a></li>
         </ul>
       </section>
 
-      <section>
+      <section class="gallery">
         <h2>ФОТОГАЛЕРЕЯ</h2>
-        <figure>
+        <figure class="gallery-content">
           <a href="#">
             <img src="img/interior-1 (2).jpg" width="286" height="164" alt="Интерьер">
           </a>
         </figure>
-        <button type="button">Назад</button>
-        <button type="button">Вперед</button>
+        <button class="button gallery-button gallery-button-back" type="button">Назад</button>
+        <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
       </section>
+      </div>
 
-      <section>
+      <div class="index-columns">
+      <section class="contacts">
         <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
         <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
           АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
@@ -89,41 +92,43 @@
           ПН—ПТ: С 10:00 ДО 22:00<br>
           СБ—ВС: С 10:00 ДО 19:00
         </p>
-        <a href="map.html">Как проехать</a>
-        <a href="contacts.html">Обратная связь</a>
+        <a class="button" href="map.html">Как проехать</a>
+        <a class="button" href="contacts.html">Обратная связь</a>
        </section>
 
-       <section>
+
+       <section class="appointment">
          <h2>Записаться</h2>
-         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-         <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
+         <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-item">
           <label for="appointment-date">Дата</label>
           <input id="appointment-date" type="date" name="date" value="2017-10-08">
           </p>
-          <p>
+          <p class="appointment-item">
           <label for="appointment-time">Время</label>
           <input id="appointment-time" type="time" name="time" value="10:00">
           </p>
-          <p>
+          <p class="appointment-item">
           <label for="appointment-name">Ваше имя</label>
           <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
           </p>
-          <p>
+          <p class="appointment-item">
           <label for="appointment-phone">Телефон</label>
           <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
           </p>
-          <button type="submit">Отправить</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
        </section>
+       </div>
 
-       <footer>
-         <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+       <footer class="main-footer">
+         <p class="footer-contacts">БАРБЕРШОП «БОРОДИНСКИЙ»<br>
           АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
           КАК НАС НАЙТИ?<br>
           ТЕЛЕФОН: +7 (495) 666-02-66
         </p>
-        <div>
+        <div class="footer-social">
           <p>Давайте дружить!</p>
           <ul>
           <li><a href="#">Вконтакте</a></li>
@@ -131,8 +136,9 @@
           <li><a href="#">Инстаграм</a></li>
           </ul>
         </div>
-        <p>РАЗРАБОТАНО:</p>
-        <a href="#">html academy</a>
+        <p class="footer-copyright"><b>РАЗРАБОТАНО:</b>
+        <a class="button" href="#">html academy</a>
+        </p>
        </footer>
 
        <section class="popup-login-index">
