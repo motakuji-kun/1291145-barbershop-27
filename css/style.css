@@ -78,7 +78,7 @@ a {
   color: #000000;
 
   background-color: #f8f5f2;
-  /*background-image: url("#"); <--- вставить нужный паттерн */
+  background-image: url("img/pattern-bsb.png");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -121,7 +121,7 @@ a {
   color: #ffffff;
 
   background-color: #212121;
-   /*background-image: url("#"); <--- та же история с паттерном */
+  background-image: url("img/pattern-bsb-footer.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
